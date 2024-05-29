@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en">
 
 <head>
-  <title>Your website title here!</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>API Requests Demo</title>
+  <!-- Link to your CSS file if you have one -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 
 <body>
+  <h1>API Requests Demo</h1>
+
+  <!-- Form for creating a new post -->
+  <form id="postForm">
+    <label for="postTitle">Title:</label><br>
+    <input type="text" id="postTitle" name="title" required><br>
+    <label for="postBody">Body:</label><br>
+    <textarea id="postBody" name="body" required></textarea><br>
+    <button type="submit">Create Post</button>
+  </form>
+
+  <!-- Container for displaying posts -->
+  <div id="postsContainer">
+    <h2>All Posts</h2>
+    <ul id="postsList">
+      <!-- Posts will be dynamically added here -->
+    </ul>
+  </div>
+
+  <!-- Script file -->
+  <script src="/js/app.js"></script>
 </body>
 
 </html>
